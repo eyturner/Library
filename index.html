@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8' />
+  <title>Some Web Page</title>
+  <link rel='stylesheet' href='style.css' />
+</head>
+
+<body>
+  <div class='menu-container'>
+    <div class='menu'>
+      <div class='date'>Dec 16th, 2019</div>
+      <div class="links">
+        <div class='signup'>Sign Up</div>
+        <div class='login'>Login</div>
+      </div>
+    </div>
+  </div>
+  <div class='header-container'>
+    <div class='header'>
+      <div class='addBook'>+Add Book</div>
+      <div class='logo'>Library</div>
+      <div class='reset'>×Reset Library</div>
+    </div>
+  </div>
+  <div class="book-form hide">
+    <form id = 'newBook'>
+      Title:<br>
+      <input type="text" name="title" placeholder="American Gods">
+      <br>
+      Author:<br>
+      <input type="text" name="author" placeholder="Neil Gaiman">
+      <br>
+      Pages:<br>
+      <input type="text" name="pageNum" placeholder="500">
+      <br><br>
+      <input type="checkbox" name="read" value="read"> I've read it!<br><br>
+      <input type="button" id="addBtn" onclick="formSubmit()" value="Add">
+    </form>
+  </div>
+  <div class='book-grid-container'>
+    <div class='book-grid'>
+    </div>
+  </div>
+</body>
+<script src="books.js"></script>
+
+</html>
